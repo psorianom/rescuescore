@@ -1,4 +1,4 @@
-# Rescue Time Efficiency Indicator
+# RescueTime Efficiency Indicator
 
 * A simple applet that shows your current efficiency score according to [Rescuetime](www.rescuetime.com)
 * Each hour-ish your efficiency score changes, according to how you waste your time.
