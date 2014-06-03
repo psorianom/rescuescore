@@ -25,7 +25,7 @@ class RescueScore:
         self.icon.set_from_pixbuf(p)
         self.icon.set_tooltip("Idle")
         self.minute_milliseconds = 6000  #number of milliseconds in a minute
-        # self.icon.connect('activate',self.icon_click)
+        self.icon.connect('activate', self.icon_click)
         self.icon.set_visible(True)
         self.old_hour = ""
 
@@ -61,12 +61,7 @@ class RescueScore:
         return p
 
     def icon_click(self, dummy):
-        # delta = time() - self.start_working_time
-        # if self.state == "idle":
-        #     self.set_state("working")
-        # else:
-        #     self.set_state("idle")
-        pass
+        self.update()
 
     def update(self):
         """This method is called everytime a tick interval occurs"""

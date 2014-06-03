@@ -34,6 +34,6 @@ def get_efficiency():
         dates = df["Date"]
         return int(efficiency.tail(1)), str(dates.tail(1))
     except:
-        return "NA", "NA"
+        return "F", "F"
 
 
